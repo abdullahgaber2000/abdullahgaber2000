@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <style>
+        html, body {
+            max-width: 100%;
+            overflow-x: hidden;
+        }
+    </style>
+    <title>ميوزكلي زون جيم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/scroll-top.css">
+    <link rel="stylesheet" href="css/social-sidebar.css">
+    <link rel="stylesheet" href="css/pricing.css">
+</head>
+<body>
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#home">
+                    <i class="fas fa-dumbbell"></i>
+                    <span class="ms-2">ميوزكلي زون</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">
+                                <i class="fas fa-home nav-icon"></i>
+                                <span>الرئيسية</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">
+                                <i class="fas fa-info-circle nav-icon"></i>
+                                <span>من نحن</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services">
+                                <i class="fas fa-dumbbell nav-icon"></i>
+                                <span>خدماتنا</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#schedule">
+                                <i class="fas fa-calendar-alt nav-icon"></i>
+                                <span>المواعيد</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#pricing">
+                                <i class="fas fa-tags nav-icon"></i>
+                                <span>الأسعار</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">
+                                <i class="fas fa-phone-alt nav-icon"></i>
+                                <span>اتصل بنا</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="hero-content">
+            <h1>ميوزكلي زون جيم</h1>
+            <p class="slogan-text">هنا القوة</p>
+        </div>
+
+        <!-- Welcome Modal -->
+        <div class="welcome-modal" id="welcomeModal">
+            <div class="welcome-modal-content">
+                <button class="close-button" onclick="closeWelcomeModal()">
+                    <i class="fas fa-times"></i>
+                </button>
+                <div class="welcome-modal-body">
+                    <i class="fas fa-dumbbell modal-logo"></i>
+                    <h2 class="welcome-title">أهلاً بك في ميوزكلي زون</h2>
+                    <p class="welcome-subtitle">هنا القوة</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">مواعيد العمل</h2>
+            <div class="schedule-container">
+                <div class="row">
+                    <div class="col-md-6 men">
+                        <div class="section-title">
+                            <h2>رجالي</h2>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">السبت</h4>
+                            <p class="time-slot">من 10ص - 3م ومن 7 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الأحد</h4>
+                            <p class="time-slot">2 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الاثنين</h4>
+                            <p class="time-slot">من 10ص - 3م ومن 7 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الثلاثاء</h4>
+                            <p class="time-slot">من 2 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الأربعاء</h4>
+                            <p class="time-slot">من 10ص - 3م ومن 7 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الخميس</h4>
+                            <p class="time-slot">من 2 مساءا - 2 صباحا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الجمعة</h4>
+                            <p class="time-slot">من 2 مساءا - 2 صباحا</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 women">
+                        <div class="section-title">
+                            <h2>سيدات</h2>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">السبت</h4>
+                            <p class="time-slot">من 3 مساءا - 7 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الأحد</h4>
+                            <p class="time-slot">من 10 صباحا - 2 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الاثنين</h4>
+                            <p class="time-slot">من 3 مساءا - 7 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الثلاثاء</h4>
+                            <p class="time-slot">من 10 صباحا - 2 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الأربعاء</h4>
+                            <p class="time-slot">من 3 مساءا - 7 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الخميس</h4>
+                            <p class="time-slot">من 10 صباحا - 2 مساءا</p>
+                        </div>
+                        <div class="schedule-item">
+                            <h4 class="month-days">الجمعة</h4>
+                            <p class="time-slot">-------</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section -->
+    <section id="pricing" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">اشتراكات للسيدات</h2>
+            <!-- Women's Pricing -->
+            <div class="row mb-5">
+                <div class="col-md-6">
+                    <div class="price-card">
+                        <h3>اشتراك يوم ويوم</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span>حديد</span>
+                                <span class="price">200 LE</span>
+                            </li>
+                            <li>
+                                <span>حديد + ايروبكس</span>
+                                <span class="price">250 LE</span>
+                            </li>
+                            <li>
+                                <span>فتنس</span>
+                                <span class="price">150 LE</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">اشترك الآن</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="price-card">
+                        <h3>اشتراك كل يوم</h3>
+                        <ul class="list-unstyled">
+                            <li>
+                                <span>حديد</span>
+                                <span class="price">300 LE</span>
+                            </li>
+                            <li>
+                                <span>حديد + فتنس</span>
+                                <span class="price">350 LE</span>
+                            </li>
+                            <li>
+                                <span>فتنس</span>
+                                <span class="price">200 LE</span>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="btn btn-primary">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="text-center mb-5">اشتراكات للرجال</h2>
+            <!-- Men's Pricing -->
+            <div class="row mb-5 men">
+                <div class="col-md-6">
+                    <div class="price-card">
+                        <h3>يوم ويوم : 200 ج.م</h3>
+                        <a href="#contact" class="btn btn-primary">اشترك الآن</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="price-card">
+                        <h3>كل يوم : 300 ج.م</h3>
+                        <a href="#contact" class="btn btn-primary">اشترك الآن</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Subscription Offers -->
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="subscription-card">
+                        <h3>٤ شهور</h3>
+                        <p class="price">1200 LE</p>
+                        <p class="bonus">+ شهر مجاناً</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="subscription-card">
+                        <h3>٨ شهور</h3>
+                        <p class="price">2400 LE</p>
+                        <p class="bonus">+ 3 شهور مجاناً</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="subscription-card">
+                        <h3>١٢ شهر</h3>
+                        <p class="price">3600 LE</p>
+                        <p class="bonus">+ 5 شهور مجاناً</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">معرض الصور</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="صالة التدريب" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة الأثقال" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1576678927484-cc907957088c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة الكارديو" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1534367610401-9f5ed68180aa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="معدات التدريب" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1517963879433-6ad2b056d712?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة التمارين" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1581009137042-c552e485697a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة اللياقة" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1540497077202-7c8a3999166f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة التمدد" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1605296867304-46d5465a13f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة التدريب الشخصي" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="gallery-item">
+                        <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=800&q=80" alt="منطقة التدريب الجماعي" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+        <div class="contact-wave">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(0, 123, 255, 0.1)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,165.3C384,171,480,149,576,128C672,107,768,85,864,96C960,107,1056,149,1152,165.3C1248,181,1344,171,1392,165.3L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>
+        <div class="container">
+            <div class="contact-container">
+                <h2 class="text-center mb-5">اتصل بنا</h2>
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <h3>اتصل بنا</h3>
+                            <p>+201027294877</p>
+                            <a href="tel:+201027294877" class="contact-btn">اتصل الآن</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-card featured">
+                            <div class="contact-icon">
+                                <i class="fab fa-tiktok"></i>
+                            </div>
+                            <h3>تيك توك</h3>
+                            <p>@muscle.zone.gym</p>
+                            <a href="http://tiktok.com/@muscle.zone.gym" class="contact-btn" target="_blank">تابعنا</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h3>البريد الإلكتروني</h3>
+                            <p>mus777513@gmail.com</p>
+                            <a href="mailto:mus777513@gmail.com" class="contact-btn">أرسل بريد</a>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="contact-card">
+                            <div class="contact-icon">
+                                <i class="fab fa-snapchat-ghost"></i>
+                            </div>
+                            <h3>سناب شات</h3>
+                            <p>musclezone_zfta</p>
+                            <a href="https://www.snapchat.com/add/musclezone_zfta?sender_web_id=b0de6f05-305a-4f5d-bc42-df7aa0da5a48&device_type=android&is_copy_url=true" class="contact-btn" target="_blank">تابعنا</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container mt-5">
+                    <h3 class="text-center mb-4">راسلنا مباشرة</h3>
+                    <div class="row justify-content-center">
+                        <div class="col-md-8">
+                            <form action="/api/contact" method="POST" class="contact-form">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" name="name" placeholder="الاسم" required>
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" name="email" placeholder="البريد الإلكتروني" required>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" name="message" rows="5" placeholder="رسالتك" required></textarea>
+                                </div>
+                                <button type="submit" class="btn btn-primary">إرسال</button>
+                            </form>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-left">
+                    <i class="fas fa-dumbbell footer-logo-icon"></i>
+                    <span class="ms-2 footer-logo-text">ميوزكلي زون</span>
+                    <span class="ms-2">&copy; 2025</span>
+                </div>
+                <div class="footer-center">
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/r2005.end.of.relationship.2022" class="social-link facebook-link" target="_blank" data-tooltip="Abdullah Gaber">
+                            <i class="fab fa-facebook-f"></i>
+                            <span class="tooltip tooltip-right">حساب المبرمج على فيسبوك</span>
+                        </a>
+                        <a href="https://wa.me/201004216774" class="social-link whatsapp-link" target="_blank" data-tooltip="+201004216774">
+                            <i class="fab fa-whatsapp"></i>
+                            <span class="tooltip tooltip-left">واتساب المبرمج</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <div class="dev-signature-container">
+                        <div class="typing-animation">
+                            <span class="bracket">{</span>
+                            <span class="property">"developer"</span>
+                            <span class="colon">:</span>
+                            <span class="string">"تصميم وتطوير: عبدالله جابر"</span>
+                            <span class="bracket">}</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Social Media Sidebar -->
+    <div class="social-sidebar">
+        <ul>
+            <li><a href="https://wa.me/201223180022" class="whatsapp" target="_blank"><i class="fab fa-whatsapp"></i><span>واتساب</span></a></li>
+            <li><a href="https://www.instagram.com/muscles_zone1?igsh=NDh1dG83eHAzZWJs" class="instagram" target="_blank"><i class="fab fa-instagram"></i><span>انستجرام</span></a></li>
+            <li><a href="https://www.facebook.com/share/199GYnxRaN/" class="facebook" target="_blank"><i class="fab fa-facebook-f"></i><span>فيسبوك</span></a></li>
+        </ul>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <a href="#top" class="scroll-to-top" aria-label="العودة للأعلى">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Show modal on first website visit only
+        document.addEventListener('DOMContentLoaded', function() {
+            // If URL has homepage indicator (#home) AND hasn't visited before
+            if (localStorage.getItem('hasVisitedBefore') !== 'true') {
+                // Show modal only on first website visit
+                document.getElementById('welcomeModal').style.display = 'flex';
+                // Mark that user has seen the welcome message
+                localStorage.setItem('hasVisitedBefore', 'true');
+            } else {
+                // User has visited before, ensure modal is hidden
+                document.getElementById('welcomeModal').style.display = 'none';
+            }
+        });
+
+        // Close modal function
+        function closeWelcomeModal() {
+            document.getElementById('welcomeModal').style.display = 'none';
+        }
+    </script>
+    <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+    
+    <!-- Direct Scroll Button (Hardcoded) -->
+    <div style="position: fixed; bottom: 30px; right: 30px; width: 55px; height: 55px; background-color: #007bff; color: white; border-radius: 50%; display: flex; justify-content: center; align-items: center; cursor: pointer; z-index: 9999; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4); border: 2px solid white;" onclick="window.scrollTo(0,0);">
+        <i class="fas fa-arrow-up" style="font-size: 20px;"></i>
+    </div>
+</body>
+</html>

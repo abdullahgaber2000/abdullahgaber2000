@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>من نحن - ميوزكلي زون جيم</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/about.css') }}">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="{{ url_for('home') }}">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Muscle Zone Gym" class="logo">
+            </a>
+            <a href="{{ url_for('home') }}" class="btn btn-outline-light">
+                <i class="fas fa-arrow-right ml-2"></i>
+                العودة للرئيسية
+            </a>
+        </div>
+    </nav>
+
+    <div class="about-hero">
+        <div class="container">
+            <h1 class="text-center mb-5 fade-in">من نحن</h1>
+            <div class="row align-items-center">
+                <div class="col-12 slide-in-right">
+                    <h2 class="mb-4">مرحباً بكم في ميوزكلي زون جيم</h2>
+                    <p>نحن نؤمن بأن الصحة واللياقة البدنية هي رحلة شخصية لكل فرد. في ميوزكلي زون جيم، نقدم لكم:</p>
+                    <ul class="feature-list">
+                        <li class="fade-in">
+                            <i class="fas fa-check-circle text-success"></i>
+                            أحدث المعدات الرياضية
+                        </li>
+                        <li class="fade-in" style="animation-delay: 0.2s;">
+                            <i class="fas fa-check-circle text-success"></i>
+                            مدربين محترفين ذوي خبرة
+                        </li>
+                        <li class="fade-in" style="animation-delay: 0.4s;">
+                            <i class="fas fa-check-circle text-success"></i>
+                            برامج تدريب شخصية
+                        </li>
+                        <li class="fade-in" style="animation-delay: 0.6s;">
+                            <i class="fas fa-check-circle text-success"></i>
+                            بيئة تدريب محفزة وصحية
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-4 fade-in">
+                    <div class="value-card">
+                        <i class="fas fa-bullseye"></i>
+                        <h3>رؤيتنا</h3>
+                        <p>أن نكون الوجهة الأولى لكل من يسعى لتحسين صحته ولياقته البدنية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.2s;">
+                    <div class="value-card">
+                        <i class="fas fa-star"></i>
+                        <h3>رسالتنا</h3>
+                        <p>توفير بيئة تدريب متكاملة تساعد أعضائنا على تحقيق أهدافهم الرياضية.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in" style="animation-delay: 0.4s;">
+                    <div class="value-card">
+                        <i class="fas fa-heart"></i>
+                        <h3>قيمنا</h3>
+                        <p>الاحترافية، الالتزام، التحفيز، والدعم المستمر لأعضائنا.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
